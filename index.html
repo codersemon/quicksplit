@@ -103,17 +103,21 @@
     .btn {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 10px;
       background: var(--teal);
       color: #fff;
       font-weight: 600;
       padding: 12px 22px;
       border-radius: 999px;
+      white-space: nowrap;
+      line-height: 1.1;
       transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
       box-shadow: 0 6px 18px rgba(0, 150, 136, 0.28);
     }
     .btn:hover { background: var(--teal-dark); transform: translateY(-2px); }
-    .btn svg { width: 20px; height: 20px; }
+    .btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+    .btn .short { display: none; }
     .btn-ghost {
       background: #fff;
       color: var(--teal);
@@ -340,11 +344,31 @@
       .feature-grid { grid-template-columns: repeat(2, 1fr); }
       .steps { grid-template-columns: 1fr; gap: 36px; }
     }
-    @media (max-width: 620px) {
+
+    /* Tablet / large phone — drop nav text links, compact the header CTA */
+    @media (max-width: 760px) {
       .nav-links .link { display: none; }
+      .nav-links .btn .full { display: none; }
+      .nav-links .btn .short { display: inline; }
+      .nav-links .btn { padding: 10px 16px; font-size: 0.92rem; }
+    }
+
+    @media (max-width: 620px) {
       .feature-grid { grid-template-columns: 1fr; }
       section { padding: 60px 0; }
-      .btn { padding: 11px 18px; }
+      .hero-cta .btn { width: 100%; }
+      .hero-cta { flex-direction: column; }
+    }
+
+    /* Small phones — shrink logo so the header never collides */
+    @media (max-width: 400px) {
+      .container { padding: 0 16px; }
+      .nav { height: 60px; }
+      .logo { font-size: 1.12rem; gap: 8px; }
+      .logo img { width: 26px; height: 26px; }
+      .nav-links .btn { padding: 9px 13px; font-size: 0.86rem; gap: 7px; }
+      .nav-links .btn svg { width: 17px; height: 17px; }
+      .hero h1 { font-size: 1.95rem; }
     }
   </style>
 </head>
@@ -362,7 +386,7 @@
         <a href="privacy.html" class="link">Privacy Policy</a>
         <a href="#" class="btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3.71v16.58a.7 .7 0 0 0 1.05 .606l14.622 -8.42a.55 .55 0 0 0 0 -.953l-14.622 -8.419a.7 .7 0 0 0 -1.05 .607"/><path d="M15 9l-10.5 11.5"/><path d="M4.5 3.5l10.5 11.5"/></svg>
-          Get it on Google Play
+          <span class="full">Get it on Google Play</span><span class="short">Google Play</span>
         </a>
       </nav>
     </div>
