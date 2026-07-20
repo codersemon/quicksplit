@@ -1,0 +1,38 @@
+# QuickSplit: Tip & Bill Calculator
+
+> QuickSplit is a free tip calculator and bill splitter app for Android, built with Flutter by Devs Wizard. It splits restaurant bills instantly among up to 100 people, calculates tips, and works 100% offline with no account and no tracking.
+
+## Key facts
+
+- Name: QuickSplit: Tip & Bill Calculator
+- Developer: Devs Wizard (also written DevsWizard) — https://devswizard.com
+- Platform: Android (Google Play)
+- Price: Free
+- Download: https://play.google.com/store/apps/details?id=com.devswizard.quicksplit
+- Website: https://quicksplit.devswizard.com/
+
+## Features
+
+- Instant tip and bill calculation in real time as you type
+- Split a bill evenly among up to 100 people in one tap
+- Multi-currency: USD, GBP, AUD, CAD, EUR
+- Dark mode with full Material 3 theming
+- Works 100% offline — no internet connection required
+- Privacy first: no account, no tracking, all data stays on device
+
+## FAQ
+
+- Is QuickSplit free? Yes, free on Google Play with no subscription and no interrupting ads.
+- Does it work offline? Yes, 100% offline; all math runs locally on the device.
+- How many people can it split between? Up to 100 people.
+- Does it need an account? No sign-up, email, or login required.
+- Which currencies? USD, GBP, AUD, CAD, EUR.
+- Is it on iPhone? Currently Android only, via Google Play.
+- Is my data private? Yes; no personal data collected, nothing uploaded to any server.
+
+## Links
+
+- Home: https://quicksplit.devswizard.com/
+- Privacy Policy: https://quicksplit.devswizard.com/privacy.html
+- Google Play: https://play.google.com/store/apps/details?id=com.devswizard.quicksplit
+- Developer: https://devswizard.com
