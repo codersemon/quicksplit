@@ -167,9 +167,15 @@
 
   <footer>
     <div class="container">
-      © 2025 Devs Wizard. All rights reserved. · <a href="index.html">Home</a> · <a href="https://devswizard.com" target="_blank" rel="noopener">devswizard.com</a>
+      © 2023–<span class="year">2026</span> Devs Wizard. All rights reserved. · <a href="index.html">Home</a> · <a href="https://devswizard.com" target="_blank" rel="noopener">devswizard.com</a>
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll('.year').forEach(function (el) {
+      el.textContent = new Date().getFullYear();
+    });
+  </script>
 
 </body>
 </html>

@@ -705,11 +705,17 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2025 Devs Wizard. All rights reserved.</span>
+        <span>© 2023–<span class="year">2026</span> Devs Wizard. All rights reserved.</span>
         <span>QuickSplit is a product of Devs Wizard.</span>
       </div>
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll('.year').forEach(function (el) {
+      el.textContent = new Date().getFullYear();
+    });
+  </script>
 
 </body>
 </html>
